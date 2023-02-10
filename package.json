@@ -5,17 +5,22 @@
   "author": "Josh Comeau <me@joshwcomeau.com>",
   "dependencies": {
     "new-component": "4.0.0",
-    "prettier": "^2.6.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "new-component": "new-component",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint --ignore-path .gitignore .",
+    "format": "prettier --write \"**/*.+(js|json|css)\""
   },
   "eslintConfig": {
     "extends": [
